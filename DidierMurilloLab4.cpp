@@ -86,8 +86,13 @@ void TrianguloPascal::Impresion(){
 
     for (Col = 0; Col <= Filas; Col++)
     {	
-        cout<<"   "<<Valoღ;
-        Valor = Valor * (Filas - Col) / (Col + 1);
+	if(Valor%2==1){
+		cout<<"   "<<"ღ";
+		Valor = Valor * (Filas - Col) / (Col + 1);
+	}else{
+		cout<<"   "<<"☮ ";
+                Valor = Valor * (Filas - Col) / (Col + 1);
+	}
     }
     cout<<"\n";
   }
