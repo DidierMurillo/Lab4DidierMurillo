@@ -32,15 +32,19 @@ void Polinomio(){
 	int Grado,Dividiendo,Cont=0;
 	cout<<"Ingrese el grado del polinomio: ";
 	cin>>Grado;
-	int** Matriz=new int*[3];
-	for(int i=0;i<3;i++){
-		Matriz[i]=new int[Grado];
-	}	
-	for(int i=Grado+1;i>0;i--){
-		cout<<"Ingrese el polinomio x^"<<i-1<<":";
-		cin>>Matriz[0][Cont];
-		Cont++;
+	
+	int** Matriz =new int*[3];
+	for(int i=0;i<Grado;i++){
+		Matriz[i]=new int   [Grado];
+		
 	}
+	for(int i=Grado;i>=0;i--){
+		cout<<"Polinomio de grado x^"<<i<<":";
+		cin>> Matriz[0][Cont];
+		Cont++;
+
+        }
+
 	cout<<"Ingrese a:";
 	cin>>Dividiendo;
 	for(int i=0;i<2;i++){
@@ -114,5 +118,5 @@ TrianguloPascal::~TrianguloPascal(){
 
 }
 
-
 */
+
