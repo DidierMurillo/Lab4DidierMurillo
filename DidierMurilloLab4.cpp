@@ -16,6 +16,10 @@ int main()
 		Polinomio();	
 
 	}
+	if(Opcion==2){
+		TrianguloPascal Triangulo(4);
+		Triangulo.Impresion();
+	}	
 	}while(Opcion!=0); 
  
 }
@@ -70,13 +74,33 @@ void Imprimir(int** Matriz,int Dividiendo,int Grado){
 }
 
 void TrianguloPascal::Impresion(){
+	int Col,Filas, Valor,Distancia;	
+	for (Filas = 0; Filas < NFilas; Filas++)
+	{
+	
+    Valor = 1;
+    for(Distancia = 0; Distancia <NFilas -Filas;Distancia++)
+    {
+        cout<<"  ";
+    }
 
+    for (Col = 0; Col <= Filas; Col++)
+    {	
+        cout<<"   "<<Valoღ;
+        Valor = Valor * (Filas - Col) / (Col + 1);
+    }
+    cout<<"\n";
+  }
+  cout<<"\n";
+
+ 
 }
 
 
 
-TrianguloPascal::TrianguloPascal(){
-	cout<<"Constructor";
+
+TrianguloPascal::TrianguloPascal(int Numero){
+	NFilas=Numero;
 }
 
 TrianguloPascal::~TrianguloPascal(){

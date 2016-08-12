@@ -2,9 +2,9 @@ class TrianguloPascal
 {
 
 	private:
-		int Linea;
+		int NFilas;
 	public:
 		void Impresion();
-		TrianguloPascal();
+		TrianguloPascal(int);
 		~TrianguloPascal();
 };
