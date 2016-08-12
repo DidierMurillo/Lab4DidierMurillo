@@ -3,8 +3,8 @@
 using namespace std;
 void Polinomio();
 void Imprimir(int**,int,int);
-void Impresion();
-void Terminado();
+
+
 int main()
 {
 	int Opcion=0;
