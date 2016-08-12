@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "TrianguloPascal.h"
 using namespace std;
 void Polinomio();
 void Imprimir(int**,int,int);
@@ -67,5 +68,21 @@ void Imprimir(int** Matriz,int Dividiendo,int Grado){
 	cout<<"\n";
 	
 }
+
+void TrianguloPascal::Impresion(){
+
+}
+
+
+
+TrianguloPascal::TrianguloPascal(){
+	cout<<"Constructor";
+}
+
+TrianguloPascal::~TrianguloPascal(){
+
+
+}
+
 
 
