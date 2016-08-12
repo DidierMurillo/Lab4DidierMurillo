@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "TrianguloPascal.h"
+#include <iomanip>
 using namespace std;
 void Polinomio();
 void Imprimir(int**,int,int);
@@ -89,10 +90,10 @@ void TrianguloPascal::Impresion(){
    	 for (Col = 0; Col <= Filas; Col++)
    	 {	
 		if(Valor%2==1){
-			cout<<"   "<<"ღ";
+			cout<<setw(2)<<"  "<<"ღ ";
 			Valor = Valor * (Filas - Col) / (Col + 1);
 		}else{
-			cout<<"   "<<"☮ ";
+			cout<<setw(2)<<"  "<<"☮ ";
                		Valor = Valor * (Filas - Col) / (Col + 1);
 		}
     	}
